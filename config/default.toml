@@ -1,0 +1,42 @@
+[server]
+host = "0.0.0.0"
+port = 8080
+workers = 4
+
+[milvus]
+host = "localhost"
+port = 19530
+collection_name = "recommendation_vectors"
+dimension = 128
+index_type = "IVF_FLAT"
+metric_type = "L2"
+
+[kafka]
+brokers = "localhost:9092"
+log_topic = "user_actions"
+feature_topic = "features"
+training_topic = "training_examples"
+group_id = "milvuso_group"
+auto_offset_reset = "earliest"
+
+[redis]
+url = "redis://localhost:6379"
+pool_size = 10
+ttl_seconds = 3600
+
+[postgres]
+url = "postgresql://localhost:5432/milvuso"
+max_connections = 10
+
+[recommendation]
+embedding_dim = 128
+top_k = 50
+similarity_threshold = 0.7
+user_profile_update_interval = 300
+
+[training]
+batch_size = 1024
+learning_rate = 0.001
+epochs = 10
+model_save_interval = 3600
+negative_sampling_ratio = 4.0

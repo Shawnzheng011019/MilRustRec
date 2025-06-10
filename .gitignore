@@ -1,0 +1,17 @@
+# Ignore logs directory
+/logs/
+/logs/*
+
+# Ignore data directory
+/data/
+/data/*
+
+# Ignore target directory
+/target/
+/target/*
+
+# Common system files to ignore
+.DS_Store
+*~
+*.swp
+*.swo
