@@ -43,7 +43,7 @@ COPY config ./config
 
 # Create a non-root user
 RUN useradd -r -s /bin/false milvuso
-RUN chown -R milvuso:milvuso /app
+RUN chown -R milvuso:MilRustRec /app
 USER milvuso
 
 # Expose port

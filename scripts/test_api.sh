@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Milvuso API Test Script
+# MilRustRec API Test Script
 
 set -e
 
@@ -9,7 +9,7 @@ USER_ID="550e8400-e29b-41d4-a716-446655440000"
 ITEM_ID1="550e8400-e29b-41d4-a716-446655440001"
 ITEM_ID2="550e8400-e29b-41d4-a716-446655440002"
 
-echo "🧪 Milvuso API Testing Started"
+echo "🧪 MilRustRec API Testing Started"
 
 # 1. Health check
 echo "1️⃣ Health check..."

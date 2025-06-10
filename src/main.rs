@@ -165,7 +165,7 @@ async fn main() -> anyhow::Result<()> {
     init_tracing().await;
 
     let config = Config::default();
-    info!("Starting Milvuso Recommendation Server with config: {:?}", config.server);
+    info!("Starting MilRustRec Recommendation Server with config: {:?}", config.server);
 
     let state = AppState::new(config.clone()).await?;
     let app = create_router(state);

@@ -21,7 +21,7 @@ async fn main() -> Result<()> {
     std::env::set_var("RUST_LOG", &args.log_level);
     init_tracing().await;
 
-    info!("Starting Milvuso Training Worker");
+    info!("Starting MilRustRec Training Worker");
 
     // Load configuration
     let config = if std::path::Path::new(&args.config).exists() {

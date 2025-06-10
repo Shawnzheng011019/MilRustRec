@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Milvuso Recommendation System Stop Script
+# MilRustRec Recommendation System Stop Script
 
-echo "🛑 Stopping Milvuso Recommendation System"
+echo "🛑 Stopping MilRustRec Recommendation System"
 
 # Stop recommendation server
 if [ -f milvuso.pid ]; then
@@ -35,4 +35,4 @@ docker-compose down
 echo "🧹 Cleaning up resources..."
 docker system prune -f
 
-echo "✅ Milvuso Recommendation System completely stopped"
+echo "✅ MilRustRec Recommendation System completely stopped"

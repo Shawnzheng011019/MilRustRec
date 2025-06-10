@@ -1,6 +1,6 @@
-# Milvuso - Vector Database Recommendation System Demo
+# MilRustRec - Vector Database Recommendation System Demo
 
-Milvuso is a lightweight recommendation system based on vector databases, developed in Rust with high performance, real-time updates, and scalable features.
+MilRustRec is a lightweight recommendation system based on vector databases, developed in Rust with high performance, real-time updates, and scalable features.
 
 ## System Architecture
 

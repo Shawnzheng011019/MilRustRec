@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# Milvuso Recommendation System Startup Script
+# MilRustRec Recommendation System Startup Script
 
 set -e
 
-echo "🚀 Starting Milvuso Recommendation System"
+echo "🚀 Starting MilRustRec Recommendation System"
 
 # Check if Docker is installed
 if ! command -v docker &> /dev/null; then
@@ -63,7 +63,7 @@ else
 fi
 
 # Check PostgreSQL
-if docker exec postgres pg_isready -U milvuso &> /dev/null; then
+if docker exec postgres pg_isready -U MilRustRec &> /dev/null; then
     echo "✅ PostgreSQL service is running"
 else
     echo "❌ PostgreSQL service is not running"
@@ -101,7 +101,7 @@ else
     exit 1
 fi
 
-echo "🎉 Milvuso Recommendation System started successfully!"
+echo "🎉 MilRustRec Recommendation System started successfully!"
 echo ""
 echo "📊 Service Status:"
 echo "  - Recommendation Server: http://localhost:8080"

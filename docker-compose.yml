@@ -3,7 +3,7 @@ version: '3.8'
 services:
   # Milvus vector database
   etcd:
-    container_name: milvuso-etcd
+    container_name: milvus-etcd
     image: quay.io/coreos/etcd:v3.5.18
     environment:
       - ETCD_AUTO_COMPACTION_MODE=revision
@@ -20,7 +20,7 @@ services:
       retries: 3
 
   minio:
-    container_name: milvuso-minio
+    container_name: milvus-minio
     image: minio/minio:RELEASE.2023-03-20T20-16-18Z
     environment:
       MINIO_ACCESS_KEY: minioadmin
@@ -38,7 +38,7 @@ services:
       retries: 3
 
   milvus:
-    container_name: milvuso-standalone
+    container_name: milvus-standalone
     image: milvusdb/milvus:v2.5.12
     command: ["milvus", "run", "standalone"]
     environment:

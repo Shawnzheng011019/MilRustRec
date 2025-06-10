@@ -9,7 +9,7 @@ async fn main() -> anyhow::Result<()> {
     // Initialize tracing
     init_tracing().await;
     
-    println!("🚀 Milvuso 推荐系统基础使用示例");
+    println!("🚀 MilRustRec 推荐系统基础使用示例");
     
     // 1. 创建配置
     let config = Config::default();
@@ -219,7 +219,7 @@ async fn main() -> anyhow::Result<()> {
     }
     
     println!("\n🎉 示例运行完成！");
-    println!("💡 这个示例展示了 Milvuso 推荐系统的核心功能:");
+    println!("💡 这个示例展示了 MilRustRec 推荐系统的核心功能:");
     println!("   - 用户画像和物品特征管理");
     println!("   - 协同过滤算法训练");
     println!("   - 实时推荐生成");

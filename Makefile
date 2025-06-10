@@ -1,10 +1,10 @@
-# Milvuso Recommendation System Makefile
+# MilRustRec Recommendation System Makefile
 
 .PHONY: help build test clean run docker-build docker-up docker-down fmt clippy bench docs
 
 # Default target
 help:
-	@echo "Milvuso Recommendation System Build Tool"
+	@echo "MilRustRec Recommendation System Build Tool"
 	@echo ""
 	@echo "Available commands:"
 	@echo "  build        - Build project"
@@ -194,13 +194,13 @@ docker-clean:
 # Backup data
 backup:
 	@echo "💾 Backing up data..."
-	docker exec postgres pg_dump -U milvuso milvuso > backup_$(shell date +%Y%m%d_%H%M%S).sql
+	docker exec postgres pg_dump -U MilRustRec MilRustRec > backup_$(shell date +%Y%m%d_%H%M%S).sql
 
 # Restore data
 restore:
 	@echo "🔄 Restoring data..."
 	@read -p "Enter backup filename: " backup_file; \
-	docker exec -i postgres psql -U milvuso milvuso < $$backup_file
+	docker exec -i postgres psql -U MilRustRec MilRustRec < $$backup_file
 
 # Generate API documentation
 api-docs:
